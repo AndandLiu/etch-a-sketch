@@ -1,20 +1,17 @@
 .container {
     background: dodgerblue;
     border: 10px solid red;
-    width: 700px;
-    height: 680px;
+    width: 800px;
+    height: 800px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    gap: 1px;
 }
   
 .cell {
     background: white;
-    border: 1px solid maroon;
     width: 40px;
-    height: 40px;
+    flex: auto;
 }
 
 .cellSketched {
