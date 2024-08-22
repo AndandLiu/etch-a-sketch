@@ -1,5 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
-    background: dodgerblue;
+    background: black;
     border: 10px solid red;
     width: 800px;
     height: 800px;
@@ -12,8 +18,4 @@
     background: white;
     width: 40px;
     flex: auto;
-}
-
-.cellSketched {
-    background: black;
 }

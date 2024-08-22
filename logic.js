@@ -7,8 +7,17 @@ function buildBoard(squareSize) {
         const div = document.createElement("div");
         div.id = "cell";
         div.classList.add("cell");
+        div.style.opacity = "1";
+
+        const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+        const r = randomBetween(0, 255);
+        const g = randomBetween(0, 255);
+        const b = randomBetween(0, 255);
+        const rgb = `rgb(${r},${g},${b})`;
+
         div.addEventListener("mouseover", () => {
-            div.classList.add("cellSketched");
+            div.style.background = rgb;
+            div.style.opacity = div.style.opacity - "0.1";
         });
         container.appendChild(div)
     }
